@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "cd demo-site && npm install && npm run dev",
-    "dev": "cd demo-site && next dev",
-    "build": "cd demo-site && next build",
-    "start": "cd demo-site && next start",
-    "lint": "cd demo-site && next lint"
+    "build": "npm --prefix demo-site run build",
+    "dev": "npm --prefix demo-site run dev",
+    "start": "npm --prefix demo-site run start",
+    "lint": "npm --prefix demo-site run lint"
   },
   "keywords": [],
   "author": "",
