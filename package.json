@@ -6,16 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "cd demo-site && npm install && npm run dev",
-    "build": "npm --prefix demo-site run build",
-    "dev": "npm --prefix demo-site run dev",
-    "start": "npm --prefix demo-site run start",
-    "lint": "npm --prefix demo-site run lint"
+    "build": "cd demo-site && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "next": "14.2.5",
     "tailwindcss": "^3.4.6"
   }
 }
