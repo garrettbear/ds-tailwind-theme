@@ -12,7 +12,7 @@ module.exports = plugin(
     theme: {
       extend: {
         colors: {
-          primary: "#1D4ED8",
+          primary: "#bada55",
           secondary: "#9333EA",
           // Add your custom design tokens here
         },
