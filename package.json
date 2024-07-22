@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "cd demo-site && npm install && npm run dev"
+    "demo": "cd demo-site && npm install && npm run dev",
+    "dev": "cd demo-site && next dev",
+    "build": "cd demo-site && next build",
+    "start": "cd demo-site && next start",
+    "lint": "cd demo-site && next lint"
   },
   "keywords": [],
   "author": "",
