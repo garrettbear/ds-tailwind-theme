@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const designTokens = require("@metamask/design-tokens");
 
 module.exports = plugin(
   function ({ addBase, theme }) {
@@ -12,7 +13,7 @@ module.exports = plugin(
     theme: {
       extend: {
         colors: {
-          primary: "#bada55",
+          primary: designTokens.darkTheme.colors.primary.alternative,
           secondary: "#9333EA",
           // Add your custom design tokens here
         },
