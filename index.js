@@ -5,12 +5,31 @@ const {
   darkTheme,
 } = require("@metamask/design-tokens");
 
+// const funStyles = require("./styles/index.css");
+
+// const customStyles = fs.readFileSync(
+//   path.resolve(__dirname, "styles/index.css"),
+//   "utf8"
+// );
+
 module.exports = plugin(
-  function ({ addBase, theme }) {
+  function ({ addBase, addComponents, theme }) {
     addBase({
       h1: { fontSize: theme("fontSize.2xl") },
       h2: { fontSize: theme("fontSize.xl") },
       // Add more base styles or components as needed
+    });
+    // Inject custom CSS variables
+    addBase({
+      ":root": {
+        "--color-fun": "#ffc0cb",
+      },
+      '[data-theme="dark"]': {
+        "--color-fun": "#39ff14",
+      },
+      '[data-theme="fox"]': {
+        "--color-fun": "#ffa500",
+      },
     });
   },
   {
@@ -114,6 +133,7 @@ module.exports = plugin(
       extend: {
         colors: {
           primary: darkTheme.colors.primary.alternative,
+          fun: "var(--color-fun)",
           secondary: {
             light: "#bada55", // Light theme color
             dark: "#c9c9c9", // Dark theme color

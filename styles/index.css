@@ -1,0 +1,12 @@
+/* Variables */
+:root {
+  --color-fun: #ffc0cb;
+}
+
+[data-theme="dark"] {
+  --color-fun: #39ff14;
+}
+
+[data-theme="fox"] {
+  --color-fun: #ffa500;
+}
