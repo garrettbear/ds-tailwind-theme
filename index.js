@@ -114,7 +114,10 @@ module.exports = plugin(
       extend: {
         colors: {
           primary: darkTheme.colors.primary.alternative,
-          secondary: "#9333EA",
+          secondary: {
+            light: "#bada55", // Light theme color
+            dark: "#c9c9c9", // Dark theme color
+          },
           // Add your custom design tokens here
         },
         spacing: {
