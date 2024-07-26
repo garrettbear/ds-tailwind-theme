@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const dsTailwindTheme = require("ds-tailwind-theme");
 
 const config: Config = {
   content: [
@@ -15,6 +16,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("../index.js")],
+  plugins: [dsTailwindTheme],
 };
 export default config;
