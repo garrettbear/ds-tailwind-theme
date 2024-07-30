@@ -133,6 +133,7 @@ module.exports = plugin(
       extend: {
         colors: {
           primary: darkTheme.colors.primary.alternative,
+          tester: "#bada55",
           fun: "var(--color-fun)",
           secondary: {
             light: "#bada55", // Light theme color

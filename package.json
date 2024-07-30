@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "cd demo-app && npm install && npm start",
     "demo": "cd demo-site && npm install && npm run dev",
     "start": "cd demo-site && npm install && npm run dev",
     "build": "cd demo-site && npm install && npm run build"
