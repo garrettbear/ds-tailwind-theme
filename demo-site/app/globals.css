@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "../node_modules/@metamask/design-tokens/dist/styles.css";
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
