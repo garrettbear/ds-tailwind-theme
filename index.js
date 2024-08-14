@@ -4,13 +4,9 @@ const {
   lightTheme,
   darkTheme,
 } = require("@metamask/design-tokens");
+const designTokens = require("@metamask/design-tokens/styles.css");
 
-// const funStyles = require("./styles/index.css");
-
-// const customStyles = fs.readFileSync(
-//   path.resolve(__dirname, "styles/index.css"),
-//   "utf8"
-// );
+import { darkThemeColors, foxThemeColors, lightThemeColors } from "./theme";
 
 module.exports = plugin(
   function ({ addBase, addComponents, theme }) {
@@ -22,14 +18,15 @@ module.exports = plugin(
     // Inject custom CSS variables
     addBase({
       ":root": {
-        "--color-fun": "#ffc0cb",
+        ...lightThemeColors,
       },
       '[data-theme="dark"]': {
-        "--color-fun": "#39ff14",
+        ...darkThemeColors,
       },
       '[data-theme="fox"]': {
-        "--color-fun": "#ffa500",
+        ...foxThemeColors,
       },
+      ...designTokens,
     });
   },
   {
@@ -135,6 +132,8 @@ module.exports = plugin(
           primary: darkTheme.colors.primary.alternative,
           tester: "#bada55",
           fun: "var(--color-fun)",
+          sweet: "var(--color-primary-alternative)",
+          "primary-default": "var(--color-primary-default)",
           secondary: {
             light: "#bada55", // Light theme color
             dark: "#c9c9c9", // Dark theme color
