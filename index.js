@@ -4,7 +4,6 @@ const {
   lightTheme,
   darkTheme,
 } = require("@metamask/design-tokens");
-const designTokens = require("@metamask/design-tokens/styles.css");
 
 import { darkThemeColors, foxThemeColors, lightThemeColors } from "./theme";
 
@@ -26,7 +25,6 @@ module.exports = plugin(
       '[data-theme="fox"]': {
         ...foxThemeColors,
       },
-      ...designTokens,
     });
   },
   {

@@ -1,7 +1,7 @@
+@import "../node_modules/@metamask/design-tokens/dist/styles.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "../node_modules/@metamask/design-tokens/dist/styles.css";
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,5 +18,5 @@
 } */
 
 body {
-  @apply bg-fun;
+  @apply bg-fun text-primary-default;
 }
