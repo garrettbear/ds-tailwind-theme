@@ -26,7 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "../index.js"
+    "../index.js - portfolio"
   ],
   "exclude": ["node_modules"]
 }
