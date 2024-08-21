@@ -22,7 +22,13 @@ module.exports = plugin(
       '[data-theme="dark"]': {
         ...darkThemeColors,
       },
+      ".dark": {
+        ...darkThemeColors,
+      },
       '[data-theme="fox"]': {
+        ...foxThemeColors,
+      },
+      ".fox": {
         ...foxThemeColors,
       },
     });

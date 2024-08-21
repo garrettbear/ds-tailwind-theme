@@ -13,6 +13,10 @@ export default function App() {
 
 function MainApp() {
   const { theme, toggleTheme } = useTheme();
+  const capitalize = (str) =>
+    typeof str === "string"
+      ? str.charAt(0).toUpperCase() + str.slice(1)
+      : theme.colorScheme.charAt(0).toUpperCase() + theme.colorScheme.slice(1);
 
   return (
     <View
@@ -21,12 +25,14 @@ function MainApp() {
         justifyContent: "center",
         alignItems: "center",
       }}
+      className="bg-fun"
     >
-      <Text className="bg-primary-default dark:bg-red-600 p-8">
-        Current theme: {theme === "light" ? "Light" : "Dark"}
+      <Text className="bg-primary-default p-8">
+        Current theme: {capitalize(theme)}
       </Text>
       <Button title="Light Mode" onPress={() => toggleTheme("light")} />
       <Button title="Dark Mode" onPress={() => toggleTheme("dark")} />
+      <Button title="Fox Mode" onPress={() => toggleTheme("fox")} />
     </View>
   );
 }
