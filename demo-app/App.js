@@ -20,18 +20,13 @@ function MainApp() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: theme.backgroundColor,
       }}
     >
-      <Text
-        className="bg-primary-default p-8"
-        style={{ color: theme.textColor }}
-      >
-        Welcome to React Native with Expo! Hello
+      <Text className="bg-primary-default dark:bg-red-600 p-8">
+        Current theme: {theme === "light" ? "Light" : "Dark"}
       </Text>
       <Button title="Light Mode" onPress={() => toggleTheme("light")} />
       <Button title="Dark Mode" onPress={() => toggleTheme("dark")} />
-      <Button title="Fox Mode" onPress={() => toggleTheme("fox")} />
     </View>
   );
 }
