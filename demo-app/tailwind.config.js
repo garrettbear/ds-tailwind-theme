@@ -6,9 +6,9 @@ module.exports = {
     "./App.{js,jsx,ts,tsx}",
     "./<custom-directory>/**/*.{js,jsx,ts,tsx}",
   ],
-  presets: [require("nativewind/preset")],
+  presets: [require("nativewind/preset"), require("../preset.ts")],
   theme: {
     extend: {},
   },
-  plugins: [require("../index.js")],
+  // plugins: [require("../index.js")],
 };

@@ -25,7 +25,7 @@ function MainApp() {
         justifyContent: "center",
         alignItems: "center",
       }}
-      className="bg-fun"
+      className="bg-backgroundColor-default"
     >
       <Text className="bg-primary-default p-8">
         Current theme: {capitalize(theme)}
