@@ -171,6 +171,7 @@ const tailwindConfig: Config = {
         // large screen typography
       },
       colors: {
+        gpt: "#10B981",
         icon: {
           default: "var(--color-icon-default)",
           alternative: "var(--color-icon-alternative)",

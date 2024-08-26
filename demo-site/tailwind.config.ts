@@ -18,6 +18,7 @@ const config: Config = {
       },
     },
   },
+  presets: [require('../preset')],
   plugins: [dsTailwindTheme],
 };
 
